@@ -79,13 +79,13 @@ ul {
     border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
     background: var(--WHITE, #FFF);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    display: flex;
-    width: 100%
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .header-container {
     display: flex;
-    align-items: center;
 
 }
 
@@ -95,7 +95,6 @@ ul {
 }
 
 .logo {
-    margin-left: auto;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -114,11 +113,10 @@ span {
 }
 
 .burger-btn {
-    padding-right: 16px;
     border: none;
     background-color: transparent;
     display: block;
-    margin-right: auto;
+    padding-left: 2px;
 }
 
 .burger-icon {
@@ -233,13 +231,21 @@ span {
 .section-one {
 
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/office.jpg);
+        url(../images/section-one-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
     max-width: 320px;
-    height: 432px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+
+@media screen and (min-resolution: 2dppx) {
+    .section-one {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/section-one-mob-2x.jpg);
+    }
 }
 
 .h-one {
@@ -253,9 +259,9 @@ span {
     line-height: 40px;
     /* 111.111% */
     letter-spacing: 0.72px;
-    padding-top: 72px;
-    padding-left: 52px;
-    padding-bottom: 72px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
     width: 216px;
 
 
@@ -271,7 +277,7 @@ span {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin: auto;
     background-color: var(--IRIS, #4D5AE5);
-
+    color: white;
 }
 
 .section-two {
@@ -448,6 +454,23 @@ span {
     padding-bottom: 32px;
 }
 
+.section-four {
+    padding-top: 96px;
+}
+
+.portfolio-title {
+    color: var(--NAVY-BLUE, #2E2F42);
+    text-align: center;
+    /* Header 2 */
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    /* 111.111% */
+    letter-spacing: 0.72px;
+}
+
 .section-four-content {
     display: flex;
     width: 288px;
@@ -494,12 +517,13 @@ span {
 }
 
 footer {
-    height: 664px;
+
     background-color: rgba(46, 47, 66, 1);
 }
 
 .foot {
-    padding-top: 97.5px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .logo-footer {
@@ -516,6 +540,7 @@ footer {
 
 .footer-logo-and-p {
     text-align: center;
+    margin-bottom: 72px;
 }
 
 .social-media-footer {
@@ -537,9 +562,6 @@ footer {
     line-height: 1.5;
     color: #F4F4FD;
     letter-spacing: 0.02em;
-    margin-top: 16px;
-    margin-bottom: 40px;
-
 }
 
 .subtitle-form {
@@ -554,6 +576,11 @@ footer {
     letter-spacing: 0.32px;
     text-align: center;
     margin: 40px;
+}
+
+.footer-icons {
+    margin-bottom: 72px;
+
 }
 
 .footer-input {
@@ -945,28 +972,37 @@ footer {
         min-width: 768px;
         background-color: #2e2f42;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/office.jpg);
+            url(../images/section-one-tablet.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         margin: 0 auto;
+        padding-top: 112px;
+        padding-bottom: 112px;
+        ;
+    }
+
+    @media screen and (min-resolution: 2dppx) {
+        .section-one {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/section-one-tab-2x.jpg);
+        }
     }
 
     .h-one {
+        width: 496px;
         color: var(--WHITE, #FFF);
         text-align: center;
-        /* Header 2 */
+        /* Header 1 */
         font-family: Roboto;
-        font-size: 36px;
+        font-size: 56px;
         font-style: normal;
         font-weight: 700;
-        line-height: 40px;
-        /* 111.111% */
-        letter-spacing: 0.72px;
-        padding-top: 122px;
-        padding-bottom: 36px;
-        width: 496px;
+        line-height: 60px;
+        /* 107.143% */
+        letter-spacing: 1.12px;
         margin: auto;
+        margin-bottom: 36px;
 
 
     }
@@ -1323,25 +1359,33 @@ footer {
         min-width: 1158px;
         background-color: #2e2f42;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/office.jpg);
+            url(../images/section-one-desktop.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         margin: 0 auto;
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
 
+    @media screen and (min-resolution: 2dppx) {
+        .section-one {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/section-one-desktop-2x.jpg);
+        }
     }
 
     .h-one {
         color: var(--WHITE, #FFF);
         text-align: center;
-        /* Header 2 */
+        /* Header 1 */
         font-family: Roboto;
-        font-size: 36px;
+        font-size: 56px;
         font-style: normal;
         font-weight: 700;
-        line-height: 40px;
-        /* 111.111% */
-        letter-spacing: 0.72px;
+        line-height: 60px;
+        /* 107.143% */
+        letter-spacing: 1.12px;
         padding-bottom: 48px;
         width: 496px;
         margin: auto;
